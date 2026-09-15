@@ -1,0 +1,9 @@
+[submodule "thirdparty/Hierarchical-Localization"]
+	path = thirdparty/Hierarchical-Localization
+	url = https://github.com/cvg/Hierarchical-Localization.git
+[submodule "thirdparty/diff-gaussian-rasterization-w-pose-var"]
+	path = thirdparty/diff-gaussian-rasterization-w-pose-var
+	url = https://github.com/anhthuan1999/diff-gaussian-rasterization-w-pose-var.git
+[submodule "thirdparty/simple-knn"]
+	path = thirdparty/simple-knn
+	url = https://github.com/anhthuan1999/simple-knn.git

@@ -1,0 +1,10 @@
+# Python caches and package build output
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Compiled extensions and object files
+*.so
+*.o

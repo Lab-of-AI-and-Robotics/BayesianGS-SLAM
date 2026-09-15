@@ -1,0 +1,17 @@
+inherit_from: configs/ScanNet/scannet.yaml
+data:
+  input_path: /mnt/data3/dataset/scannet_after/scene0106_00
+  output_path: /mnt/data3/bayesianSLAM_GS/ScanNet/scene0106
+  scene_name: scene0106_00
+cam: 
+  H: 480 
+  W: 640
+  fx: 577.6
+  fy: 578.7
+  cx: 318.9
+  cy: 242.7
+  depth_scale: 1.
+  crop_edge: 12
+
+var:
+  use_nlldepth: False

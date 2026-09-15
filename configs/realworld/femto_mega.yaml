@@ -1,0 +1,67 @@
+project_name: "BayesianSLAM_GS_femto_mega"
+dataset_name: "femto_mega"
+checkpoint_path: null
+use_wandb: True
+frame_limit: -1
+seed: 0
+
+data:
+  input_path: /mnt/data3/dataset/ours/lab_0
+  output_path: /mnt/data3/bayesianSLAM_GS/realworld/lab_0/
+  scene_name: indoor_1
+
+mapping:
+  new_submap_every: 50
+  map_every: 1
+  iterations: 100
+  new_submap_iterations: 100
+  new_submap_points_num: 100000
+  new_submap_gradient_points_num: 50000
+  new_frame_sample_size: 30000
+  new_points_radius: 0.0001
+  current_view_opt_iterations: 0.4
+  alpha_thre: 0.6
+  pruning_thre: 0.5
+  submap_using_motion_heuristic: True
+tracking:
+  gt_camera: False
+  w_color_loss: 0.6
+  iterations: 200
+  cam_rot_lr: 0.002
+  cam_trans_lr: 0.01
+  odometry_type: "const_speed"
+  help_camera_initialization: False
+  init_err_ratio: 5
+  odometer_method: "hybrid"
+  filter_alpha: False
+  filter_outlier_depth: False
+  alpha_thre: 0.98
+  soft_alpha: True
+  mask_invalid_depth: True
+  enable_exposure: False
+cam:
+  # Orbbec Femto Mega (approximate intrinsics for aligned 1280x720 color-to-depth).
+  # Tune per-sensor if calibration values are available.
+  H: 720
+  W: 1280
+  fx: 749.3336791992188
+  cx: 643.938232421875
+  fy: 749.3157348632812
+  cy: 345.6728820800781
+  depth_scale: 1000.0  # uint16 depth stored in millimetres → metres
+  crop_edge: 50
+lc:
+  min_similarity: 0.5
+  pgo_edge_prune_thres: 0.25
+  voxel_size: 0.02
+  pgo_max_iterations: 500
+  registration:
+    method: "gs_reg"
+    base_lr: 5.e-3
+    min_overlap_ratio: 0.2
+    use_render: False
+  min_interval: 3
+  final: False
+  use_all_frames_for_detection: True
+var:
+  use_nlldepth: False
