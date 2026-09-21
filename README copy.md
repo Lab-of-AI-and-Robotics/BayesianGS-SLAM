@@ -19,39 +19,7 @@
 
 </div>
 
-## Overview
-
-![BayesianGS-SLAM overview](docs/overview.png)
-
-## Environment
-
-### Clone the repository
-
-```bash
-git clone --recurse-submodules https://github.com/Lab-of-AI-and-Robotics/BayesianGS-SLAM.git
-cd BayesianGS-SLAM
-```
-
-For an existing checkout, initialize the submodules with `git submodule update --init --recursive`.
-
-### Create the Conda environment
-
-```bash
-conda env create -f environment.yml -n bayesiangs-slam
-conda activate bayesiangs-slam
-```
-
-### Install the local dependencies
-
-
-```bash
-python -m pip install setuptools wheel ninja
-python -m pip install --no-build-isolation ./thirdparty/simple-knn
-python -m pip install --no-build-isolation ./thirdparty/gaussian_rasterizer_var
-python -m pip install --no-build-isolation ./thirdparty/diff-gaussian-rasterization-w-pose-var
-python -m pip install -e ./thirdparty/Hierarchical-Localization
-```
-
+## Experiment
 
 ## Run
 
@@ -72,6 +40,7 @@ python run_slam.py /PATH/TO/CONFIG.yaml --keyframe_count 4
 Our implementation builds upon [LoopSplat](https://github.com/GradientSpaces/LoopSplat), [Gaussian-SLAM](https://vladimiryugay.github.io/gaussian_slam/index.html), and [VarSplat](https://github.com/anhthuan1999/varsplat).
 
 ## Citation
+
 ```bibtex
 @article{TBD,
   title={BayesianGS-SLAM: Uncertainty-Aware Neural Rendering SLAM via Probabilistic Formulation},
