@@ -15,7 +15,7 @@
 
 <h3 align="center"> IEEE Robotics and Automation Letters, 2026 </h3>
 
-[ArXiv]() | [Video]()
+[ArXiv](https://arxiv.org/abs/2609.24140) | [Video](https://www.youtube.com/watch?v=6AhWxyfViuA)
 
 </div>
 
@@ -72,11 +72,24 @@ python run_slam.py /PATH/TO/CONFIG.yaml --keyframe_count 4
 Our implementation builds upon [LoopSplat](https://github.com/GradientSpaces/LoopSplat), [Gaussian-SLAM](https://vladimiryugay.github.io/gaussian_slam/index.html), and [VarSplat](https://github.com/anhthuan1999/varsplat).
 
 ## Citation
+
 ```bibtex
 @article{TBD,
   title={BayesianGS-SLAM: Uncertainty-Aware Neural Rendering SLAM via Probabilistic Formulation},
   author={Kang, Kyeongsu, Ha, Seongbo ,Lee, Sibaek and Yu, Hyeonwoo},
   journal={TBD},
   year={2026}
+}
+```
+
+```bibtex
+@misc{kang2026bayesiangsslamuncertaintyawareneuralrendering,
+      title={BayesianGS-SLAM: Uncertainty-Aware Neural Rendering SLAM via Probabilistic Formulation}, 
+      author={Kyeongsu Kang and Seongbo Ha and Sibaek Lee and Hyeonwoo Yu},
+      year={2026},
+      eprint={2609.24140},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2609.24140}, 
 }
 ```
