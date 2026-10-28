@@ -15,7 +15,7 @@
 
 <h3 align="center"> IEEE Robotics and Automation Letters, 2026 </h3>
 
-[ArXiv](https://arxiv.org/abs/2609.24140) | [Video](https://www.youtube.com/watch?v=6AhWxyfViuA)
+ [Paper](https://ieeexplore.ieee.org/document/11727033) | [ArXiv](https://arxiv.org/abs/2609.24140) | [Video](https://www.youtube.com/watch?v=6AhWxyfViuA)
 
 </div>
 
