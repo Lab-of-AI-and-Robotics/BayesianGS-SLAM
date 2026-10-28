@@ -74,11 +74,12 @@ Our implementation builds upon [LoopSplat](https://github.com/GradientSpaces/Loo
 ## Citation
 
 ```bibtex
-@article{TBD,
+@article{kang2026bayesiangs,
   title={BayesianGS-SLAM: Uncertainty-Aware Neural Rendering SLAM via Probabilistic Formulation},
-  author={Kang, Kyeongsu, Ha, Seongbo ,Lee, Sibaek and Yu, Hyeonwoo},
-  journal={TBD},
-  year={2026}
+  author={Kang, Kyeongsu and Ha, Seongbo and Lee, Sibaek and Yu, Hyeonwoo},
+  journal={IEEE Robotics and Automation Letters},
+  year={2026},
+  publisher={IEEE}
 }
 ```
 
